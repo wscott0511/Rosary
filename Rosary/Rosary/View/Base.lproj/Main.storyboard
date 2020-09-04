@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ab8-fA-Wfe">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="Rosary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sC-NC-GOA" customClass="BottomButton" customModule="Rosary" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="772" width="414" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="n3g-xy-lLZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
+                                <state key="normal" title="Let's Get Started">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eua-PG-yo0"/>
+                                    <segue destination="RGo-93-f9T" kind="show" id="I4B-A0-7oj"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hiclipart.com" translatesAutoresizingMaskIntoConstraints="NO" id="rnc-Jz-bEv">
+                                <rect key="frame" x="0.0" y="88" width="414" height="684"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rnc-Jz-bEv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="44d-iJ-IoS"/>
+                            <constraint firstItem="8sC-NC-GOA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Mse-vf-ciJ"/>
+                            <constraint firstItem="rnc-Jz-bEv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Sy8-1Z-a89"/>
+                            <constraint firstItem="8sC-NC-GOA" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="bhC-iQ-fwp"/>
+                            <constraint firstItem="8sC-NC-GOA" firstAttribute="top" secondItem="rnc-Jz-bEv" secondAttribute="bottom" id="noc-ZM-oRZ"/>
+                            <constraint firstItem="8sC-NC-GOA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="r6V-fB-xfF"/>
+                            <constraint firstItem="rnc-Jz-bEv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vwJ-4M-B1q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Welcome" id="rF8-aY-uNu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1034.7826086956522" y="61.607142857142854"/>
+        </scene>
+        <!--First Four View Controller-->
+        <scene sceneID="ALL-As-25m">
+            <objects>
+                <viewController id="RGo-93-f9T" customClass="FirstFourViewController" customModule="Rosary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eZT-8q-ucQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apostles' Creed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRA-vf-KYG">
+                                <rect key="frame" x="61" y="98" width="292" height="55"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="40"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVA-Fy-tUB">
+                                <rect key="frame" x="20" y="173" width="374" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="Wd0-ci-Ddh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N3g-xz-ClL" customClass="BottomButton" customModule="Rosary" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="772" width="414" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="I5I-la-T5S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
+                                <state key="normal" title="Next Prayer">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eLd-Uv-YQA"/>
+                                    <action selector="nextPrayerButton:" destination="RGo-93-f9T" eventType="touchUpInside" id="tnt-yp-G3i"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="N3g-xz-ClL" firstAttribute="bottom" secondItem="IjF-kd-osU" secondAttribute="bottom" id="7QN-SQ-nat"/>
+                            <constraint firstItem="LRA-vf-KYG" firstAttribute="centerX" secondItem="eZT-8q-ucQ" secondAttribute="centerX" id="Cvj-LW-9uN"/>
+                            <constraint firstItem="N3g-xz-ClL" firstAttribute="trailing" secondItem="IjF-kd-osU" secondAttribute="trailing" id="Iaf-qa-gsk"/>
+                            <constraint firstItem="LRA-vf-KYG" firstAttribute="top" secondItem="IjF-kd-osU" secondAttribute="top" constant="10" id="KO0-O6-Wss"/>
+                            <constraint firstItem="xVA-Fy-tUB" firstAttribute="leading" secondItem="eZT-8q-ucQ" secondAttribute="leading" constant="20" id="QD5-Lv-yCq"/>
+                            <constraint firstAttribute="trailing" secondItem="xVA-Fy-tUB" secondAttribute="trailing" constant="20" id="VFF-JA-at1"/>
+                            <constraint firstItem="xVA-Fy-tUB" firstAttribute="top" secondItem="LRA-vf-KYG" secondAttribute="bottom" constant="20" id="WIi-v9-hUp"/>
+                            <constraint firstItem="N3g-xz-ClL" firstAttribute="leading" secondItem="IjF-kd-osU" secondAttribute="leading" id="kTR-9I-POU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IjF-kd-osU"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OWC-f2-pKe"/>
+                    <connections>
+                        <outlet property="nextPrayer" destination="N3g-xz-ClL" id="CbM-nY-EP4"/>
+                        <outlet property="prayerLabel" destination="xVA-Fy-tUB" id="YaR-WK-xYd"/>
+                        <outlet property="titleLabel" destination="LRA-vf-KYG" id="nZq-hX-2un"/>
+                        <segue destination="drX-vk-H6A" kind="show" identifier="FirstPrayersToDay" id="Da0-YM-hXZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jhy-49-puh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1948" y="62"/>
+        </scene>
+        <!--Choose Day View Controller-->
+        <scene sceneID="sJD-gW-hWh">
+            <objects>
+                <viewController id="drX-vk-H6A" customClass="ChooseDayViewController" customModule="Rosary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7yr-Bk-MNN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose the day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2O-k1-AjH">
+                                <rect key="frame" x="64.5" y="118" width="285" height="55"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="40"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="4iR-PT-2li">
+                                <rect key="frame" x="20" y="449" width="374" height="413"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umi-Bh-qMW" customClass="BottomButton" customModule="Rosary" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="kRe-gX-YoV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
+                                        <state key="normal" title="Monday &amp; Saturday">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="bw8-o4-Cvs" kind="show" id="bhH-Ek-zEb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zlo-Is-JMz" customClass="BottomButton" customModule="Rosary" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="111" width="374" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="Zc3-sJ-ICd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
+                                        <state key="normal" title="Tuesday &amp; Friday">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tp-pj-3E3" customClass="BottomButton" customModule="Rosary" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="222" width="374" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="Wnm-iD-Zo1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
+                                        <state key="normal" title="Wednesday &amp; Sunday">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JK8-IT-pYm" customClass="BottomButton" customModule="Rosary" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="333" width="374" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="p5T-74-At0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
+                                        <state key="normal" title="Thrusday">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="umi-Bh-qMW" firstAttribute="leading" secondItem="4iR-PT-2li" secondAttribute="leading" id="4XO-U6-hxO"/>
+                                    <constraint firstAttribute="trailing" secondItem="umi-Bh-qMW" secondAttribute="trailing" id="rnG-at-DJE"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Y4a-eo-egY" firstAttribute="bottom" secondItem="4iR-PT-2li" secondAttribute="bottom" id="1vd-xU-rS2"/>
+                            <constraint firstItem="u2O-k1-AjH" firstAttribute="top" secondItem="Y4a-eo-egY" secondAttribute="top" constant="30" id="3ge-jb-eB0"/>
+                            <constraint firstItem="u2O-k1-AjH" firstAttribute="centerX" secondItem="7yr-Bk-MNN" secondAttribute="centerX" id="C6V-P5-LMJ"/>
+                            <constraint firstItem="4iR-PT-2li" firstAttribute="leading" secondItem="Y4a-eo-egY" secondAttribute="leading" constant="20" id="PUn-wB-BS0"/>
+                            <constraint firstItem="Y4a-eo-egY" firstAttribute="trailing" secondItem="4iR-PT-2li" secondAttribute="trailing" constant="20" id="k69-eJ-O2R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Y4a-eo-egY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="a2g-TR-1nF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hEO-o2-neh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2896" y="62"/>
+        </scene>
+        <!--The Joyful Mysteries-->
+        <scene sceneID="VNu-cD-TTg">
+            <objects>
+                <viewController id="bw8-o4-Cvs" customClass="JoyfulMysteryNumberOneViewController" customModule="Rosary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vJ5-f7-t6G">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firstJoyfulMystery" translatesAutoresizingMaskIntoConstraints="NO" id="zed-Oi-9Mw">
+                                <rect key="frame" x="92.5" y="128" width="229" height="299"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="229" id="YD1-78-Tsz"/>
+                                    <constraint firstAttribute="height" constant="299" id="vPz-sO-nrg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The First Joyful Mystery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cl-Eu-wKx">
+                                <rect key="frame" x="43.5" y="457" width="327" height="41"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Annuciation of the Archangel Gabriel to the Blessed Virgin" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOm-hE-uik">
+                                <rect key="frame" x="20" y="528" width="374" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Wwj-cj-muA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEo-TB-vsv" customClass="BottomButton" customModule="Rosary" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="772" width="414" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="YHd-vg-OXs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
+                                <state key="normal" title="Next Prayer">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1OE-Mv-Dpq"/>
+                                    <action selector="nextPrayerButton:" destination="bw8-o4-Cvs" eventType="touchUpInside" id="6Kd-5R-kMn"/>
+                                    <action selector="nextPrayerButton:" destination="RGo-93-f9T" eventType="touchUpInside" id="DG7-bN-XuJ"/>
+                                    <segue destination="wQ0-As-uXi" kind="show" id="V9B-9H-DVB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6cl-Eu-wKx" firstAttribute="top" secondItem="zed-Oi-9Mw" secondAttribute="bottom" constant="30" id="85p-PN-oVW"/>
+                            <constraint firstAttribute="trailing" secondItem="uOm-hE-uik" secondAttribute="trailing" constant="20" id="IhE-RV-cnU"/>
+                            <constraint firstItem="zed-Oi-9Mw" firstAttribute="top" secondItem="NSH-wr-wvb" secondAttribute="top" constant="40" id="Kkc-b7-fZR"/>
+                            <constraint firstItem="oEo-TB-vsv" firstAttribute="bottom" secondItem="NSH-wr-wvb" secondAttribute="bottom" id="Vra-0m-vpc"/>
+                            <constraint firstItem="uOm-hE-uik" firstAttribute="leading" secondItem="vJ5-f7-t6G" secondAttribute="leading" constant="20" id="dvK-4T-oS2"/>
+                            <constraint firstItem="oEo-TB-vsv" firstAttribute="trailing" secondItem="NSH-wr-wvb" secondAttribute="trailing" id="e40-LJ-BXC"/>
+                            <constraint firstItem="zed-Oi-9Mw" firstAttribute="centerX" secondItem="vJ5-f7-t6G" secondAttribute="centerX" id="f1r-MI-OHQ"/>
+                            <constraint firstItem="uOm-hE-uik" firstAttribute="top" secondItem="6cl-Eu-wKx" secondAttribute="bottom" constant="30" id="fXy-XQ-vTC"/>
+                            <constraint firstItem="6cl-Eu-wKx" firstAttribute="centerX" secondItem="vJ5-f7-t6G" secondAttribute="centerX" id="q4z-Px-5JW"/>
+                            <constraint firstItem="oEo-TB-vsv" firstAttribute="leading" secondItem="NSH-wr-wvb" secondAttribute="leading" id="qqa-Ua-usu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NSH-wr-wvb"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="The Joyful Mysteries" id="S37-cO-Xvk"/>
+                    <connections>
+                        <outlet property="mysteryImage" destination="zed-Oi-9Mw" id="YSj-a3-u84"/>
+                        <outlet property="mysteryNumberLabel" destination="6cl-Eu-wKx" id="ivr-ei-h6d"/>
+                        <outlet property="theMystery" destination="uOm-hE-uik" id="cTH-dt-xlq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sWw-bx-AXP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3895.652173913044" y="-1113.6160714285713"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CTv-OV-8m0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ab8-fA-Wfe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="al4-ii-bLD">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="FE7-DJ-lHs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zhO-BU-3Uf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124.6376811594203" y="61.607142857142854"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ogl-B5-G3z">
+            <objects>
+                <viewController id="apW-F4-lm9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lie-JT-OD2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="g37-Zw-AOx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6w7-3C-lsF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3896" y="-351"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="M2Y-aG-0kx">
+            <objects>
+                <viewController id="6Ik-Jd-mQe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rBU-F9-SgM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="rzj-CP-2Ul"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e1e-bs-e9Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3896" y="372"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bGi-ok-uLM">
+            <objects>
+                <viewController id="Ps5-nf-B1A" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5uJ-cn-BxJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="WBy-5v-Tzc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rXp-a5-ETr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3923" y="1066"/>
+        </scene>
+        <!--The First Joyful Mystery-->
+        <scene sceneID="VUL-9K-ymR">
+            <objects>
+                <viewController id="wQ0-As-uXi" customClass="JoyfulNumberOneViewController" customModule="Rosary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Ec-lf-sDz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhi-HP-Igy" customClass="BottomButton" customModule="Rosary" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="772" width="414" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="8o8-1U-uTu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
+                                <state key="normal" title="Next Prayer">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3yg-Cy-Pba"/>
+                                    <action selector="nextPrayerButton:" destination="RGo-93-f9T" eventType="touchUpInside" id="JOh-8g-MY9"/>
+                                    <action selector="nextPrayerButton:" destination="wQ0-As-uXi" eventType="touchUpInside" id="bXc-T3-UYc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Lords Prayer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkI-g3-jiu">
+                                <rect key="frame" x="111" y="98" width="192" height="35"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lnz-uy-zrY">
+                                <rect key="frame" x="20" y="298" width="374" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="0PD-Lq-kia"/>
+                                </constraints>
+                                <string key="text">Our Father, who art in heaven, hallowed be they name; thy kingdom come; thy will be done on earth as it is in heaven. Give us this day our daily bread; and forgive us our trespasses; as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil</string>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qkI-g3-jiu" firstAttribute="top" secondItem="RHs-t6-0Gy" secondAttribute="top" constant="10" id="2cD-Sh-LlZ"/>
+                            <constraint firstItem="rhi-HP-Igy" firstAttribute="leading" secondItem="RHs-t6-0Gy" secondAttribute="leading" id="3Hp-fS-QAh"/>
+                            <constraint firstAttribute="trailing" secondItem="lnz-uy-zrY" secondAttribute="trailing" constant="20" id="4ge-he-4Dl"/>
+                            <constraint firstItem="lnz-uy-zrY" firstAttribute="centerY" secondItem="3Ec-lf-sDz" secondAttribute="centerY" id="Alj-C5-3rH"/>
+                            <constraint firstItem="rhi-HP-Igy" firstAttribute="trailing" secondItem="RHs-t6-0Gy" secondAttribute="trailing" id="BKx-yW-UQB"/>
+                            <constraint firstItem="rhi-HP-Igy" firstAttribute="bottom" secondItem="RHs-t6-0Gy" secondAttribute="bottom" id="Bsp-G2-fSG"/>
+                            <constraint firstItem="lnz-uy-zrY" firstAttribute="leading" secondItem="RHs-t6-0Gy" secondAttribute="leading" constant="20" id="hfE-Zb-2Ep"/>
+                            <constraint firstItem="qkI-g3-jiu" firstAttribute="centerX" secondItem="3Ec-lf-sDz" secondAttribute="centerX" id="p9m-Sy-dF4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RHs-t6-0Gy"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="The First Joyful Mystery" id="Lam-89-MiT"/>
+                    <connections>
+                        <outlet property="prayerTitle" destination="qkI-g3-jiu" id="RPu-4u-QqL"/>
+                        <outlet property="thePrayerLabel" destination="lnz-uy-zrY" id="0Lb-wC-5qw"/>
+                        <segue destination="WvT-vJ-m1T" kind="show" identifier="Joyful1To2" id="H8u-Sw-W7Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ve-yi-qy5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4655" y="-1114"/>
+        </scene>
+        <!--The Joyful Mysteries-->
+        <scene sceneID="Pfo-1s-BCz">
+            <objects>
+                <viewController id="WvT-vJ-m1T" customClass="JoyfulMysteryNumberTwoViewController" customModule="Rosary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rzZ-tE-VrM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="secondJoyfulMystery" translatesAutoresizingMaskIntoConstraints="NO" id="E3A-Fq-SYf">
+                                <rect key="frame" x="92.5" y="128" width="229" height="299"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="229" id="Dl5-8c-mgn"/>
+                                    <constraint firstAttribute="height" constant="299" id="OhA-hD-D9Q"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Second Joyful Mystery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAO-Tb-7E8">
+                                <rect key="frame" x="23.5" y="457" width="367" height="41"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Visitation of the Blessed Virgin to her cousin, St. Elizabeth" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ph9-c2-6Ro">
+                                <rect key="frame" x="20" y="528" width="374" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Y6f-Qx-Ddr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqn-1a-aga" customClass="BottomButton" customModule="Rosary" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="772" width="414" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="qyy-B6-iOy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
+                                <state key="normal" title="Next Prayer">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LYD-gj-ZDf"/>
+                                    <action selector="nextPrayerButton:" destination="wQ0-As-uXi" eventType="touchUpInside" id="1C1-8q-W34"/>
+                                    <action selector="nextPrayerButton:" destination="RGo-93-f9T" eventType="touchUpInside" id="YGf-vZ-Ty3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gqn-1a-aga" firstAttribute="bottom" secondItem="Rs2-eK-mPz" secondAttribute="bottom" id="0B5-d1-GT4"/>
+                            <constraint firstItem="ph9-c2-6Ro" firstAttribute="top" secondItem="hAO-Tb-7E8" secondAttribute="bottom" constant="30" id="1e3-Bq-UgT"/>
+                            <constraint firstItem="E3A-Fq-SYf" firstAttribute="centerX" secondItem="rzZ-tE-VrM" secondAttribute="centerX" id="AoI-iO-yjG"/>
+                            <constraint firstItem="E3A-Fq-SYf" firstAttribute="top" secondItem="Rs2-eK-mPz" secondAttribute="top" constant="40" id="Hqr-mJ-oSL"/>
+                            <constraint firstItem="gqn-1a-aga" firstAttribute="trailing" secondItem="Rs2-eK-mPz" secondAttribute="trailing" id="Lw4-GX-qXb"/>
+                            <constraint firstItem="hAO-Tb-7E8" firstAttribute="top" secondItem="E3A-Fq-SYf" secondAttribute="bottom" constant="30" id="YQI-h0-wBx"/>
+                            <constraint firstAttribute="trailing" secondItem="ph9-c2-6Ro" secondAttribute="trailing" constant="20" id="csa-7B-GrW"/>
+                            <constraint firstItem="ph9-c2-6Ro" firstAttribute="leading" secondItem="rzZ-tE-VrM" secondAttribute="leading" constant="20" id="fL9-mH-JTC"/>
+                            <constraint firstItem="gqn-1a-aga" firstAttribute="leading" secondItem="Rs2-eK-mPz" secondAttribute="leading" id="lF9-3T-LGF"/>
+                            <constraint firstItem="hAO-Tb-7E8" firstAttribute="centerX" secondItem="rzZ-tE-VrM" secondAttribute="centerX" id="xqY-iK-clw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rs2-eK-mPz"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="The Joyful Mysteries" id="TBI-xe-km6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e3w-20-RC6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5538" y="-1114"/>
+        </scene>
+        <!--Joyful Number Two View Controller-->
+        <scene sceneID="LQi-Wr-Xse">
+            <objects>
+                <viewController id="Bxr-gv-Ch7" customClass="JoyfulNumberTwoViewController" customModule="Rosary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fmH-4C-hsO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="5zI-oY-cEH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dvL-uG-YyZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6423" y="-1114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="firstJoyfulMystery" width="78.5" height="111.5"/>
+        <image name="hiclipart.com" width="400" height="550.5"/>
+        <image name="secondJoyfulMystery" width="94" height="137"/>
+    </resources>
+</document>

@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B92EC5DB25005A8E00A7B0C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92EC5DA25005A8E00A7B0C0 /* AppDelegate.swift */; };
+		B92EC5DD25005A8E00A7B0C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92EC5DC25005A8E00A7B0C0 /* SceneDelegate.swift */; };
+		B92EC5E225005A8E00A7B0C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B92EC5E025005A8E00A7B0C0 /* Main.storyboard */; };
+		B92EC5E425005A9200A7B0C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B92EC5E325005A9200A7B0C0 /* Assets.xcassets */; };
+		B92EC5E725005A9200A7B0C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B92EC5E525005A9200A7B0C0 /* LaunchScreen.storyboard */; };
+		B92EC5F225005AF700A7B0C0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92EC5F125005AF700A7B0C0 /* WelcomeViewController.swift */; };
+		B92EC5F725014BF100A7B0C0 /* BottomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92EC5F525014BF100A7B0C0 /* BottomButton.swift */; };
+		B92EC5F925015E7B00A7B0C0 /* FirstFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92EC5F825015E7B00A7B0C0 /* FirstFourViewController.swift */; };
+		B92EC5FB25015F1F00A7B0C0 /* Prayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92EC5FA25015F1F00A7B0C0 /* Prayers.swift */; };
+		B92EC5FD2501873B00A7B0C0 /* JoyfulNumberOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92EC5FC2501873B00A7B0C0 /* JoyfulNumberOneViewController.swift */; };
+		B92EC5FF2501CE0F00A7B0C0 /* ChooseDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92EC5FE2501CE0F00A7B0C0 /* ChooseDayViewController.swift */; };
+		B92EC6012501CE5E00A7B0C0 /* JoyfulMysteryNumberOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92EC6002501CE5E00A7B0C0 /* JoyfulMysteryNumberOneViewController.swift */; };
+		B92EC6032501CE8600A7B0C0 /* JoyfulMysteryNumberTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92EC6022501CE8600A7B0C0 /* JoyfulMysteryNumberTwoViewController.swift */; };
+		B92EC6052501CFE500A7B0C0 /* JoyfulNumberTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92EC6042501CFE500A7B0C0 /* JoyfulNumberTwoViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B92EC5D725005A8E00A7B0C0 /* Rosary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rosary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B92EC5DA25005A8E00A7B0C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B92EC5DC25005A8E00A7B0C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B92EC5E125005A8E00A7B0C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B92EC5E325005A9200A7B0C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B92EC5E625005A9200A7B0C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B92EC5E825005A9200A7B0C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B92EC5F125005AF700A7B0C0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		B92EC5F625014BF100A7B0C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base; path = Base.lproj/BottomButton.swift; sourceTree = "<group>"; };
+		B92EC5F825015E7B00A7B0C0 /* FirstFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstFourViewController.swift; sourceTree = "<group>"; };
+		B92EC5FA25015F1F00A7B0C0 /* Prayers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prayers.swift; sourceTree = "<group>"; };
+		B92EC5FC2501873B00A7B0C0 /* JoyfulNumberOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoyfulNumberOneViewController.swift; sourceTree = "<group>"; };
+		B92EC5FE2501CE0F00A7B0C0 /* ChooseDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseDayViewController.swift; sourceTree = "<group>"; };
+		B92EC6002501CE5E00A7B0C0 /* JoyfulMysteryNumberOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoyfulMysteryNumberOneViewController.swift; sourceTree = "<group>"; };
+		B92EC6022501CE8600A7B0C0 /* JoyfulMysteryNumberTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoyfulMysteryNumberTwoViewController.swift; sourceTree = "<group>"; };
+		B92EC6042501CFE500A7B0C0 /* JoyfulNumberTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoyfulNumberTwoViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B92EC5D425005A8E00A7B0C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B92EC5CE25005A8E00A7B0C0 = {
+			isa = PBXGroup;
+			children = (
+				B92EC5D925005A8E00A7B0C0 /* Rosary */,
+				B92EC5D825005A8E00A7B0C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B92EC5D825005A8E00A7B0C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B92EC5D725005A8E00A7B0C0 /* Rosary.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B92EC5D925005A8E00A7B0C0 /* Rosary */ = {
+			isa = PBXGroup;
+			children = (
+				B92EC5F025005AAA00A7B0C0 /* Model */,
+				B92EC5EF25005AA500A7B0C0 /* View */,
+				B92EC5EE25005A9C00A7B0C0 /* Controller */,
+				B92EC5DA25005A8E00A7B0C0 /* AppDelegate.swift */,
+				B92EC5DC25005A8E00A7B0C0 /* SceneDelegate.swift */,
+				B92EC5E325005A9200A7B0C0 /* Assets.xcassets */,
+				B92EC5E525005A9200A7B0C0 /* LaunchScreen.storyboard */,
+				B92EC5E825005A9200A7B0C0 /* Info.plist */,
+			);
+			path = Rosary;
+			sourceTree = "<group>";
+		};
+		B92EC5EE25005A9C00A7B0C0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B92EC5F125005AF700A7B0C0 /* WelcomeViewController.swift */,
+				B92EC5F825015E7B00A7B0C0 /* FirstFourViewController.swift */,
+				B92EC5FC2501873B00A7B0C0 /* JoyfulNumberOneViewController.swift */,
+				B92EC5FE2501CE0F00A7B0C0 /* ChooseDayViewController.swift */,
+				B92EC6002501CE5E00A7B0C0 /* JoyfulMysteryNumberOneViewController.swift */,
+				B92EC6022501CE8600A7B0C0 /* JoyfulMysteryNumberTwoViewController.swift */,
+				B92EC6042501CFE500A7B0C0 /* JoyfulNumberTwoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B92EC5EF25005AA500A7B0C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B92EC5E025005A8E00A7B0C0 /* Main.storyboard */,
+				B92EC5F525014BF100A7B0C0 /* BottomButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B92EC5F025005AAA00A7B0C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B92EC5FA25015F1F00A7B0C0 /* Prayers.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B92EC5D625005A8E00A7B0C0 /* Rosary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B92EC5EB25005A9200A7B0C0 /* Build configuration list for PBXNativeTarget "Rosary" */;
+			buildPhases = (
+				B92EC5D325005A8E00A7B0C0 /* Sources */,
+				B92EC5D425005A8E00A7B0C0 /* Frameworks */,
+				B92EC5D525005A8E00A7B0C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rosary;
+			productName = Rosary;
+			productReference = B92EC5D725005A8E00A7B0C0 /* Rosary.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B92EC5CF25005A8E00A7B0C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Ryan Scott";
+				TargetAttributes = {
+					B92EC5D625005A8E00A7B0C0 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = B92EC5D225005A8E00A7B0C0 /* Build configuration list for PBXProject "Rosary" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B92EC5CE25005A8E00A7B0C0;
+			productRefGroup = B92EC5D825005A8E00A7B0C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B92EC5D625005A8E00A7B0C0 /* Rosary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B92EC5D525005A8E00A7B0C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B92EC5E725005A9200A7B0C0 /* LaunchScreen.storyboard in Resources */,
+				B92EC5E425005A9200A7B0C0 /* Assets.xcassets in Resources */,
+				B92EC5E225005A8E00A7B0C0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B92EC5D325005A8E00A7B0C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B92EC6052501CFE500A7B0C0 /* JoyfulNumberTwoViewController.swift in Sources */,
+				B92EC5F225005AF700A7B0C0 /* WelcomeViewController.swift in Sources */,
+				B92EC6032501CE8600A7B0C0 /* JoyfulMysteryNumberTwoViewController.swift in Sources */,
+				B92EC5FD2501873B00A7B0C0 /* JoyfulNumberOneViewController.swift in Sources */,
+				B92EC5FB25015F1F00A7B0C0 /* Prayers.swift in Sources */,
+				B92EC5F925015E7B00A7B0C0 /* FirstFourViewController.swift in Sources */,
+				B92EC5DB25005A8E00A7B0C0 /* AppDelegate.swift in Sources */,
+				B92EC6012501CE5E00A7B0C0 /* JoyfulMysteryNumberOneViewController.swift in Sources */,
+				B92EC5F725014BF100A7B0C0 /* BottomButton.swift in Sources */,
+				B92EC5FF2501CE0F00A7B0C0 /* ChooseDayViewController.swift in Sources */,
+				B92EC5DD25005A8E00A7B0C0 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B92EC5E025005A8E00A7B0C0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B92EC5E125005A8E00A7B0C0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B92EC5E525005A9200A7B0C0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B92EC5E625005A9200A7B0C0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B92EC5F525014BF100A7B0C0 /* BottomButton.swift */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B92EC5F625014BF100A7B0C0 /* Base */,
+			);
+			name = BottomButton.swift;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B92EC5E925005A9200A7B0C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B92EC5EA25005A9200A7B0C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B92EC5EC25005A9200A7B0C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Rosary/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rscottsites.Rosary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B92EC5ED25005A9200A7B0C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Rosary/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rscottsites.Rosary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B92EC5D225005A8E00A7B0C0 /* Build configuration list for PBXProject "Rosary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B92EC5E925005A9200A7B0C0 /* Debug */,
+				B92EC5EA25005A9200A7B0C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B92EC5EB25005A9200A7B0C0 /* Build configuration list for PBXNativeTarget "Rosary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B92EC5EC25005A9200A7B0C0 /* Debug */,
+				B92EC5ED25005A9200A7B0C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B92EC5CF25005A8E00A7B0C0 /* Project object */;
+}
