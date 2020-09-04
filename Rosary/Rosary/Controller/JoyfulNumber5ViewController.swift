@@ -1,25 +1,24 @@
 //
-//  JoyfulNumberTwoViewController.swift
+//  JoyfulNumber5ViewController.swift
 //  Rosary
 //
-//  Created by Ryan Scott on 9/3/20.
+//  Created by Ryan Scott on 9/4/20.
 //  Copyright © 2020 Ryan Scott. All rights reserved.
 //
 
 import UIKit
 
-class JoyfulNumberTwoViewController: UIViewController {
+class JoyfulNumber5ViewController: UIViewController {
     
     // Outlets
     @IBOutlet weak var prayerTitle: UILabel!
     @IBOutlet weak var prayerLabel: UILabel!
     
-    
     // Variables
     var prayerNumber = 0
     
     let prayer = [
-        Prayers(t: "The Second Decade", p: "For a full and speedy recovery for those suffering from the coravirus. For protection of their family members and all those who are at risk of getting or transmitting the virus. Our Lady, Help of Christians, Intercede for us!"),
+        Prayers(t: "The Fifth Decade", p: "For an expedient halt to the spread of the virus. For churches and schools to be reopened, and for people to be able to return to their normal daily activities with a deepend fiath and love for God. Our Lady, Help of Christians, intercede for us!"),
         Prayers(t: "The Lord's Prayer", p: "Our Father, who art in heaven, hallowed be they name; thy kingdom come; thy will be done on earth as it is in heaven. Give us this day our daily bread; and forgive us our trespasses; as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil"),
         Prayers(t: "Hail Mary #1", p: "Hail Mary, full of grace, the Lord is with thee; blessed art thou among women; and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen."),
         Prayers(t: "Hail Mary #2", p: "Hail Mary, full of grace, the Lord is with thee; blessed art thou among women; and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen."),
@@ -42,11 +41,11 @@ class JoyfulNumberTwoViewController: UIViewController {
     }
     
     @IBAction func nextButton(_ sender: UIButton) {
-        if prayerNumber + 1 < prayer.count {
+        if prayerNumber + 1 < prayer.count{
             prayerNumber += 1
             updateUI()
         } else {
-            performSegue(withIdentifier: "Joyful2ToJoyful3", sender: nil)
+            performSegue(withIdentifier: "Joyful5ToEnd", sender: nil)
         }
     }
     
@@ -54,7 +53,5 @@ class JoyfulNumberTwoViewController: UIViewController {
         prayerTitle.text = prayer[prayerNumber].title
         prayerLabel.text = prayer[prayerNumber].prayer
     }
-    
-    
 
 }

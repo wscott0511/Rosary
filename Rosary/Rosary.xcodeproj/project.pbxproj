@@ -21,6 +21,12 @@
 		B92EC6012501CE5E00A7B0C0 /* JoyfulMysteryNumberOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92EC6002501CE5E00A7B0C0 /* JoyfulMysteryNumberOneViewController.swift */; };
 		B92EC6032501CE8600A7B0C0 /* JoyfulMysteryNumberTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92EC6022501CE8600A7B0C0 /* JoyfulMysteryNumberTwoViewController.swift */; };
 		B92EC6052501CFE500A7B0C0 /* JoyfulNumberTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92EC6042501CFE500A7B0C0 /* JoyfulNumberTwoViewController.swift */; };
+		B9B607F82502F20500CEBD73 /* ThirdJoyfulMysteryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B607F72502F20500CEBD73 /* ThirdJoyfulMysteryViewController.swift */; };
+		B9B607FA2502F37C00CEBD73 /* JoyfulNumber3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B607F92502F37C00CEBD73 /* JoyfulNumber3ViewController.swift */; };
+		B9B607FC2502F67600CEBD73 /* FourthJoyfulMysteryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B607FB2502F67600CEBD73 /* FourthJoyfulMysteryViewController.swift */; };
+		B9B607FE2502F77800CEBD73 /* JoyfulNumber4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B607FD2502F77800CEBD73 /* JoyfulNumber4ViewController.swift */; };
+		B9B608002502F9E000CEBD73 /* FifthJoyfulMysteryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B607FF2502F9E000CEBD73 /* FifthJoyfulMysteryViewController.swift */; };
+		B9B608022502FAE000CEBD73 /* JoyfulNumber5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B608012502FAE000CEBD73 /* JoyfulNumber5ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +46,12 @@
 		B92EC6002501CE5E00A7B0C0 /* JoyfulMysteryNumberOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoyfulMysteryNumberOneViewController.swift; sourceTree = "<group>"; };
 		B92EC6022501CE8600A7B0C0 /* JoyfulMysteryNumberTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoyfulMysteryNumberTwoViewController.swift; sourceTree = "<group>"; };
 		B92EC6042501CFE500A7B0C0 /* JoyfulNumberTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoyfulNumberTwoViewController.swift; sourceTree = "<group>"; };
+		B9B607F72502F20500CEBD73 /* ThirdJoyfulMysteryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdJoyfulMysteryViewController.swift; sourceTree = "<group>"; };
+		B9B607F92502F37C00CEBD73 /* JoyfulNumber3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoyfulNumber3ViewController.swift; sourceTree = "<group>"; };
+		B9B607FB2502F67600CEBD73 /* FourthJoyfulMysteryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthJoyfulMysteryViewController.swift; sourceTree = "<group>"; };
+		B9B607FD2502F77800CEBD73 /* JoyfulNumber4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoyfulNumber4ViewController.swift; sourceTree = "<group>"; };
+		B9B607FF2502F9E000CEBD73 /* FifthJoyfulMysteryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthJoyfulMysteryViewController.swift; sourceTree = "<group>"; };
+		B9B608012502FAE000CEBD73 /* JoyfulNumber5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoyfulNumber5ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +106,12 @@
 				B92EC6002501CE5E00A7B0C0 /* JoyfulMysteryNumberOneViewController.swift */,
 				B92EC6022501CE8600A7B0C0 /* JoyfulMysteryNumberTwoViewController.swift */,
 				B92EC6042501CFE500A7B0C0 /* JoyfulNumberTwoViewController.swift */,
+				B9B607F72502F20500CEBD73 /* ThirdJoyfulMysteryViewController.swift */,
+				B9B607F92502F37C00CEBD73 /* JoyfulNumber3ViewController.swift */,
+				B9B607FB2502F67600CEBD73 /* FourthJoyfulMysteryViewController.swift */,
+				B9B607FD2502F77800CEBD73 /* JoyfulNumber4ViewController.swift */,
+				B9B607FF2502F9E000CEBD73 /* FifthJoyfulMysteryViewController.swift */,
+				B9B608012502FAE000CEBD73 /* JoyfulNumber5ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -187,15 +205,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				B92EC6052501CFE500A7B0C0 /* JoyfulNumberTwoViewController.swift in Sources */,
+				B9B607F82502F20500CEBD73 /* ThirdJoyfulMysteryViewController.swift in Sources */,
 				B92EC5F225005AF700A7B0C0 /* WelcomeViewController.swift in Sources */,
 				B92EC6032501CE8600A7B0C0 /* JoyfulMysteryNumberTwoViewController.swift in Sources */,
 				B92EC5FD2501873B00A7B0C0 /* JoyfulNumberOneViewController.swift in Sources */,
+				B9B607FC2502F67600CEBD73 /* FourthJoyfulMysteryViewController.swift in Sources */,
+				B9B607FA2502F37C00CEBD73 /* JoyfulNumber3ViewController.swift in Sources */,
+				B9B608002502F9E000CEBD73 /* FifthJoyfulMysteryViewController.swift in Sources */,
 				B92EC5FB25015F1F00A7B0C0 /* Prayers.swift in Sources */,
 				B92EC5F925015E7B00A7B0C0 /* FirstFourViewController.swift in Sources */,
+				B9B608022502FAE000CEBD73 /* JoyfulNumber5ViewController.swift in Sources */,
 				B92EC5DB25005A8E00A7B0C0 /* AppDelegate.swift in Sources */,
 				B92EC6012501CE5E00A7B0C0 /* JoyfulMysteryNumberOneViewController.swift in Sources */,
 				B92EC5F725014BF100A7B0C0 /* BottomButton.swift in Sources */,
 				B92EC5FF2501CE0F00A7B0C0 /* ChooseDayViewController.swift in Sources */,
+				B9B607FE2502F77800CEBD73 /* JoyfulNumber4ViewController.swift in Sources */,
 				B92EC5DD25005A8E00A7B0C0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

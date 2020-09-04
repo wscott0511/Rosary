@@ -1,25 +1,24 @@
 //
-//  JoyfulNumberTwoViewController.swift
+//  JoyfulNumber4ViewController.swift
 //  Rosary
 //
-//  Created by Ryan Scott on 9/3/20.
+//  Created by Ryan Scott on 9/4/20.
 //  Copyright © 2020 Ryan Scott. All rights reserved.
 //
 
 import UIKit
 
-class JoyfulNumberTwoViewController: UIViewController {
+class JoyfulNumber4ViewController: UIViewController {
     
     // Outlets
     @IBOutlet weak var prayerTitle: UILabel!
     @IBOutlet weak var prayerLabel: UILabel!
     
-    
     // Variables
     var prayerNumber = 0
     
     let prayer = [
-        Prayers(t: "The Second Decade", p: "For a full and speedy recovery for those suffering from the coravirus. For protection of their family members and all those who are at risk of getting or transmitting the virus. Our Lady, Help of Christians, Intercede for us!"),
+        Prayers(t: "The Fourth Decade", p: "For protection on those who are most vulnerable to coronavirus: the elderly, those with compromised immune systems, those who have been traveling abroad, those who are in quarantine. Our Lady, Help of Christians, intercede for us!"),
         Prayers(t: "The Lord's Prayer", p: "Our Father, who art in heaven, hallowed be they name; thy kingdom come; thy will be done on earth as it is in heaven. Give us this day our daily bread; and forgive us our trespasses; as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil"),
         Prayers(t: "Hail Mary #1", p: "Hail Mary, full of grace, the Lord is with thee; blessed art thou among women; and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen."),
         Prayers(t: "Hail Mary #2", p: "Hail Mary, full of grace, the Lord is with thee; blessed art thou among women; and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen."),
@@ -34,6 +33,7 @@ class JoyfulNumberTwoViewController: UIViewController {
         Prayers(t: "Glory Be", p: "Glory be to the Father, and to the Son, and to the Holy Spirit, as it was in the beginning, is now and ever shall be, world without end. Amen"),
         Prayers(t: "Fatima Prayer", p: "O my Jesus, forgive us our sins, save us form the fires of hel; lead all souls to heaven, especially those in most need of thy mercy.")
     ]
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +46,7 @@ class JoyfulNumberTwoViewController: UIViewController {
             prayerNumber += 1
             updateUI()
         } else {
-            performSegue(withIdentifier: "Joyful2ToJoyful3", sender: nil)
+            performSegue(withIdentifier: "Joyful4ToJoyful5", sender: nil)
         }
     }
     
@@ -55,6 +55,4 @@ class JoyfulNumberTwoViewController: UIViewController {
         prayerLabel.text = prayer[prayerNumber].prayer
     }
     
-    
-
 }
