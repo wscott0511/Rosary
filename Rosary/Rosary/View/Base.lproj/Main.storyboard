@@ -153,6 +153,9 @@
                                         <state key="normal" title="Tuesday &amp; Friday">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tuesdayButton:" destination="drX-vk-H6A" eventType="touchUpInside" id="fEv-0c-AQF"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tp-pj-3E3" customClass="BottomButton" customModule="Rosary" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="222" width="374" height="80"/>
@@ -194,6 +197,7 @@
                     <navigationItem key="navigationItem" id="a2g-TR-1nF"/>
                     <connections>
                         <segue destination="kOc-kk-nd0" kind="show" identifier="MondayAndTuesdayToJoful" id="Ftq-l7-EwI"/>
+                        <segue destination="apW-F4-lm9" kind="show" identifier="TuesdayToSorroful" id="V6v-CG-dxc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hEO-o2-neh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -224,20 +228,282 @@
             </objects>
             <point key="canvasLocation" x="124.6376811594203" y="61.607142857142854"/>
         </scene>
-        <!--View Controller-->
+        <!--The Sorrowful Mysteries-->
         <scene sceneID="ogl-B5-G3z">
             <objects>
-                <viewController id="apW-F4-lm9" sceneMemberID="viewController">
+                <viewController id="apW-F4-lm9" customClass="FirstSorrowfulMysteryViewController" customModule="Rosary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lie-JT-OD2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mystery1" translatesAutoresizingMaskIntoConstraints="NO" id="nTf-Wv-jtt">
+                                <rect key="frame" x="92.5" y="128" width="229" height="299"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="229" id="eLU-b1-eci"/>
+                                    <constraint firstAttribute="height" constant="299" id="uwq-Az-Atx"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The First Sorrowful Mystery" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2NM-ok-Ejd">
+                                <rect key="frame" x="20" y="457" width="374" height="82"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Agony in the Garden of Gethsemane" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TnP-JS-3sR">
+                                <rect key="frame" x="20" y="569" width="374" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="tza-tL-bMp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBa-Ck-0b0" customClass="BottomButton" customModule="Rosary" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="772" width="414" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="sOU-Mm-iaF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
+                                <state key="normal" title="Next Prayer">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Cd-LP-h74"/>
+                                    <action selector="nextButton:" destination="apW-F4-lm9" eventType="touchUpInside" id="5F9-OS-3On"/>
+                                    <action selector="nextPrayerButton:" destination="RGo-93-f9T" eventType="touchUpInside" id="YRu-fQ-Zks"/>
+                                    <action selector="nextPrayerButton:" destination="wQ0-As-uXi" eventType="touchUpInside" id="ftu-D0-X0t"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="g37-Zw-AOx" firstAttribute="trailing" secondItem="2NM-ok-Ejd" secondAttribute="trailing" constant="20" id="A8d-hU-jbc"/>
+                            <constraint firstItem="nTf-Wv-jtt" firstAttribute="top" secondItem="g37-Zw-AOx" secondAttribute="top" constant="40" id="B9o-Ps-POl"/>
+                            <constraint firstItem="nTf-Wv-jtt" firstAttribute="centerX" secondItem="Lie-JT-OD2" secondAttribute="centerX" id="D6A-Rf-FNq"/>
+                            <constraint firstItem="WBa-Ck-0b0" firstAttribute="trailing" secondItem="g37-Zw-AOx" secondAttribute="trailing" id="KLA-Fj-MZz"/>
+                            <constraint firstItem="WBa-Ck-0b0" firstAttribute="leading" secondItem="g37-Zw-AOx" secondAttribute="leading" id="NSt-tm-Xpk"/>
+                            <constraint firstItem="2NM-ok-Ejd" firstAttribute="leading" secondItem="g37-Zw-AOx" secondAttribute="leading" constant="20" id="cdv-Dk-xFD"/>
+                            <constraint firstItem="g37-Zw-AOx" firstAttribute="trailing" secondItem="TnP-JS-3sR" secondAttribute="trailing" constant="20" id="dVF-rY-U1T"/>
+                            <constraint firstItem="2NM-ok-Ejd" firstAttribute="top" secondItem="nTf-Wv-jtt" secondAttribute="bottom" constant="30" id="hkA-mD-0iU"/>
+                            <constraint firstItem="g37-Zw-AOx" firstAttribute="bottom" secondItem="WBa-Ck-0b0" secondAttribute="bottom" id="iiW-aG-w6h"/>
+                            <constraint firstItem="TnP-JS-3sR" firstAttribute="top" secondItem="2NM-ok-Ejd" secondAttribute="bottom" constant="30" id="pAa-xp-lAi"/>
+                            <constraint firstItem="TnP-JS-3sR" firstAttribute="leading" secondItem="g37-Zw-AOx" secondAttribute="leading" constant="20" id="zEK-iu-kdC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="g37-Zw-AOx"/>
                     </view>
+                    <navigationItem key="navigationItem" title="The Sorrowful Mysteries" id="iIx-dk-GzX"/>
+                    <connections>
+                        <segue destination="crr-h3-KSw" kind="show" identifier="Mystery1ToPrayers" id="a8m-a0-TJa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6w7-3C-lsF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3896" y="-351"/>
+        </scene>
+        <!--The First Sorrowful Mystery-->
+        <scene sceneID="ZCU-Xz-0Tz">
+            <objects>
+                <viewController id="crr-h3-KSw" customClass="Sorrowful1ViewController" customModule="Rosary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bRc-Ud-2bb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The First Decade" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CC6-65-C4f">
+                                <rect key="frame" x="110.5" y="98" width="193" height="34.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fW-te-44m">
+                                <rect key="frame" x="20" y="298" width="374" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="zIe-kF-VDu"/>
+                                </constraints>
+                                <string key="text">For the protection of the first responders, doctors, and nurses who care for those made critically ill by coronavirus. For wisdom and guidance on those scientists and researchers seeking vaccines and rapid testing platforms. Our lady, Help of Christians, intercede for us!</string>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmu-Ss-bFm" customClass="BottomButton" customModule="Rosary" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="772" width="414" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="k0F-eV-iDG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
+                                <state key="normal" title="Next Prayer">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XSa-Gk-ui4"/>
+                                    <action selector="nextButton:" destination="crr-h3-KSw" eventType="touchUpInside" id="Xos-4n-70C"/>
+                                    <action selector="nextPrayerButton:" destination="wQ0-As-uXi" eventType="touchUpInside" id="ONc-vh-2EX"/>
+                                    <action selector="nextPrayerButton:" destination="RGo-93-f9T" eventType="touchUpInside" id="gPc-SW-e8U"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mYb-ah-eCK" firstAttribute="trailing" secondItem="7fW-te-44m" secondAttribute="trailing" constant="20" id="ORZ-cO-nbJ"/>
+                            <constraint firstItem="mYb-ah-eCK" firstAttribute="bottom" secondItem="gmu-Ss-bFm" secondAttribute="bottom" id="fzE-F5-rW5"/>
+                            <constraint firstItem="7fW-te-44m" firstAttribute="leading" secondItem="mYb-ah-eCK" secondAttribute="leading" constant="20" id="hM2-es-ZBA"/>
+                            <constraint firstItem="gmu-Ss-bFm" firstAttribute="leading" secondItem="bRc-Ud-2bb" secondAttribute="leading" id="i03-RZ-IeA"/>
+                            <constraint firstItem="7fW-te-44m" firstAttribute="centerY" secondItem="bRc-Ud-2bb" secondAttribute="centerY" id="qLG-4D-dCJ"/>
+                            <constraint firstItem="CC6-65-C4f" firstAttribute="top" secondItem="mYb-ah-eCK" secondAttribute="top" constant="10" id="qiG-OR-xS2"/>
+                            <constraint firstItem="CC6-65-C4f" firstAttribute="centerX" secondItem="bRc-Ud-2bb" secondAttribute="centerX" id="rxL-fE-ZsK"/>
+                            <constraint firstItem="mYb-ah-eCK" firstAttribute="trailing" secondItem="gmu-Ss-bFm" secondAttribute="trailing" id="t2i-1M-2d1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mYb-ah-eCK"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="The First Sorrowful Mystery" id="BgE-fk-Mii"/>
+                    <connections>
+                        <outlet property="prayerLabel" destination="7fW-te-44m" id="Y5t-8h-gtZ"/>
+                        <outlet property="prayerTitle" destination="CC6-65-C4f" id="jJ3-al-9y2"/>
+                        <segue destination="k6N-iA-khb" kind="show" identifier="Sorrowful1To2" id="8KX-yI-HYT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ypx-a4-C4p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4768" y="-352"/>
+        </scene>
+        <!--The Sorrowful Mysteries-->
+        <scene sceneID="b5K-Ht-URw">
+            <objects>
+                <viewController id="k6N-iA-khb" customClass="SecondSorrowfulMysteryViewController" customModule="Rosary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ahL-8g-20I">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mystery2" translatesAutoresizingMaskIntoConstraints="NO" id="SZj-C7-t5F">
+                                <rect key="frame" x="92.5" y="128" width="229" height="299"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="229" id="jv4-gy-GnE"/>
+                                    <constraint firstAttribute="height" constant="299" id="zaR-pV-cO9"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Second Sorrowful Mystery" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUo-tY-N0j">
+                                <rect key="frame" x="20" y="457" width="374" height="82"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Scourging of Jesus at the Pillar" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="719-Ys-UaG">
+                                <rect key="frame" x="20" y="569" width="374" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="mIe-cD-Wxy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Jz-Af-iFG" customClass="BottomButton" customModule="Rosary" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="772" width="414" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="B6c-Zh-zTz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
+                                <state key="normal" title="Next Prayer">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vTm-5T-vza"/>
+                                    <action selector="nextButton:" destination="apW-F4-lm9" eventType="touchUpInside" id="h60-Q8-4QQ"/>
+                                    <action selector="nextButton:" destination="k6N-iA-khb" eventType="touchUpInside" id="teH-8Z-9tF"/>
+                                    <action selector="nextPrayerButton:" destination="RGo-93-f9T" eventType="touchUpInside" id="bR3-Ms-5bh"/>
+                                    <action selector="nextPrayerButton:" destination="wQ0-As-uXi" eventType="touchUpInside" id="veY-oT-tjL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DUo-tY-N0j" firstAttribute="top" secondItem="SZj-C7-t5F" secondAttribute="bottom" constant="30" id="0Pk-SJ-PUy"/>
+                            <constraint firstItem="DUo-tY-N0j" firstAttribute="leading" secondItem="ahL-8g-20I" secondAttribute="leading" constant="20" id="6pl-Sz-yw9"/>
+                            <constraint firstItem="719-Ys-UaG" firstAttribute="leading" secondItem="BSh-Tb-qAv" secondAttribute="leading" constant="20" id="6sx-VC-j8c"/>
+                            <constraint firstAttribute="trailing" secondItem="DUo-tY-N0j" secondAttribute="trailing" constant="20" id="Bzq-SC-YAr"/>
+                            <constraint firstItem="719-Ys-UaG" firstAttribute="top" secondItem="DUo-tY-N0j" secondAttribute="bottom" constant="30" id="C1y-bk-cPj"/>
+                            <constraint firstItem="SZj-C7-t5F" firstAttribute="top" secondItem="BSh-Tb-qAv" secondAttribute="top" constant="40" id="IqA-lh-xxe"/>
+                            <constraint firstItem="BSh-Tb-qAv" firstAttribute="trailing" secondItem="3Jz-Af-iFG" secondAttribute="trailing" id="Rqn-ci-RSB"/>
+                            <constraint firstItem="3Jz-Af-iFG" firstAttribute="leading" secondItem="ahL-8g-20I" secondAttribute="leading" id="WOW-65-rrI"/>
+                            <constraint firstAttribute="trailing" secondItem="719-Ys-UaG" secondAttribute="trailing" constant="20" id="XPV-fC-dyP"/>
+                            <constraint firstItem="SZj-C7-t5F" firstAttribute="centerX" secondItem="ahL-8g-20I" secondAttribute="centerX" id="Yss-Hu-pEv"/>
+                            <constraint firstItem="BSh-Tb-qAv" firstAttribute="bottom" secondItem="3Jz-Af-iFG" secondAttribute="bottom" id="p5K-93-Ygu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BSh-Tb-qAv"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="The Sorrowful Mysteries" id="95c-Ca-wRw"/>
+                    <connections>
+                        <segue destination="0CL-q7-Spm" kind="show" identifier="SorrowfulMystery2ToPrayer" id="m7L-xz-ED0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZEJ-5r-uJh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5730" y="-348"/>
+        </scene>
+        <!--The Second Sorrowful Mystery-->
+        <scene sceneID="guc-4z-O1y">
+            <objects>
+                <viewController id="0CL-q7-Spm" customClass="Sorrowful2ViewController" customModule="Rosary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wJH-8s-Thf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Second Decade" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKV-Pt-6ZQ">
+                                <rect key="frame" x="20" y="98" width="374" height="34.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6b-rG-qhl">
+                                <rect key="frame" x="20" y="298" width="374" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="PaU-TC-Irl"/>
+                                </constraints>
+                                <string key="text">For a full and speedy recovery for those suffering from the coravirus. For protection of their family members and all those who are at risk of getting or transmitting the virus. Our Lady, Help of Christians, Intercede for us!</string>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IjM-og-CMa" customClass="BottomButton" customModule="Rosary" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="772" width="414" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="7VR-xS-FwJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
+                                <state key="normal" title="Next Prayer">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N3h-Qm-Zpn"/>
+                                    <action selector="nextButton:" destination="0CL-q7-Spm" eventType="touchUpInside" id="Iqr-NP-Ti3"/>
+                                    <action selector="nextButton:" destination="crr-h3-KSw" eventType="touchUpInside" id="z5x-e8-Fpx"/>
+                                    <action selector="nextPrayerButton:" destination="wQ0-As-uXi" eventType="touchUpInside" id="NQm-gv-XWC"/>
+                                    <action selector="nextPrayerButton:" destination="RGo-93-f9T" eventType="touchUpInside" id="gmG-ns-8GH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IJa-4f-EnW" firstAttribute="trailing" secondItem="IjM-og-CMa" secondAttribute="trailing" id="85E-5r-ARJ"/>
+                            <constraint firstItem="v6b-rG-qhl" firstAttribute="centerY" secondItem="wJH-8s-Thf" secondAttribute="centerY" id="DFu-yg-gLv"/>
+                            <constraint firstItem="IJa-4f-EnW" firstAttribute="trailing" secondItem="jKV-Pt-6ZQ" secondAttribute="trailing" constant="20" id="GmW-bg-e18"/>
+                            <constraint firstItem="IJa-4f-EnW" firstAttribute="trailing" secondItem="v6b-rG-qhl" secondAttribute="trailing" constant="20" id="MRd-Jw-KWX"/>
+                            <constraint firstItem="IJa-4f-EnW" firstAttribute="bottom" secondItem="IjM-og-CMa" secondAttribute="bottom" id="RmQ-OE-zL8"/>
+                            <constraint firstItem="jKV-Pt-6ZQ" firstAttribute="leading" secondItem="wJH-8s-Thf" secondAttribute="leading" constant="20" id="SI3-Md-9fQ"/>
+                            <constraint firstItem="jKV-Pt-6ZQ" firstAttribute="top" secondItem="IJa-4f-EnW" secondAttribute="top" constant="10" id="Yz6-Rk-5bF"/>
+                            <constraint firstItem="v6b-rG-qhl" firstAttribute="leading" secondItem="wJH-8s-Thf" secondAttribute="leading" constant="20" id="drs-bb-ZUe"/>
+                            <constraint firstItem="IjM-og-CMa" firstAttribute="leading" secondItem="wJH-8s-Thf" secondAttribute="leading" id="sh7-tS-YEn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IJa-4f-EnW"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="The Second Sorrowful Mystery" id="fFW-dW-SJ7"/>
+                    <connections>
+                        <outlet property="prayerLabel" destination="v6b-rG-qhl" id="6Mz-nK-VIz"/>
+                        <outlet property="prayerTitle" destination="jKV-Pt-6ZQ" id="8E0-e4-baw"/>
+                        <segue destination="vc2-s3-jkD" kind="show" identifier="Sorrowful2To3" id="quB-sa-ICc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tYN-Oz-GY2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6655" y="-347"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="M2Y-aG-0kx">
@@ -348,8 +614,8 @@
                                     <constraint firstAttribute="height" constant="299" id="OhA-hD-D9Q"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Second Joyful Mystery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAO-Tb-7E8">
-                                <rect key="frame" x="23.5" y="457" width="367" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Second Joyful Mystery" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAO-Tb-7E8">
+                                <rect key="frame" x="20" y="457" width="374" height="41"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -388,10 +654,11 @@
                             <constraint firstItem="E3A-Fq-SYf" firstAttribute="top" secondItem="Rs2-eK-mPz" secondAttribute="top" constant="40" id="Hqr-mJ-oSL"/>
                             <constraint firstItem="ph9-c2-6Ro" firstAttribute="top" secondItem="hAO-Tb-7E8" secondAttribute="bottom" constant="30" id="Jk7-g4-4aB"/>
                             <constraint firstItem="gqn-1a-aga" firstAttribute="trailing" secondItem="Rs2-eK-mPz" secondAttribute="trailing" id="Lw4-GX-qXb"/>
+                            <constraint firstItem="hAO-Tb-7E8" firstAttribute="leading" secondItem="Rs2-eK-mPz" secondAttribute="leading" constant="20" id="ShE-wy-RNQ"/>
                             <constraint firstItem="hAO-Tb-7E8" firstAttribute="top" secondItem="E3A-Fq-SYf" secondAttribute="bottom" constant="30" id="YQI-h0-wBx"/>
                             <constraint firstItem="ph9-c2-6Ro" firstAttribute="leading" secondItem="rzZ-tE-VrM" secondAttribute="leading" constant="20" id="ZZH-zG-BnX"/>
                             <constraint firstItem="gqn-1a-aga" firstAttribute="leading" secondItem="Rs2-eK-mPz" secondAttribute="leading" id="lF9-3T-LGF"/>
-                            <constraint firstItem="hAO-Tb-7E8" firstAttribute="centerX" secondItem="rzZ-tE-VrM" secondAttribute="centerX" id="xqY-iK-clw"/>
+                            <constraint firstItem="Rs2-eK-mPz" firstAttribute="trailing" secondItem="hAO-Tb-7E8" secondAttribute="trailing" constant="20" id="s3J-eZ-n1e"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Rs2-eK-mPz"/>
                     </view>
@@ -481,8 +748,8 @@
                                     <constraint firstAttribute="height" constant="299" id="vPz-sO-nrg"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The First Joyful Mystery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cl-Eu-wKx">
-                                <rect key="frame" x="43.5" y="457" width="327" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The First Joyful Mystery" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cl-Eu-wKx">
+                                <rect key="frame" x="20" y="457" width="374" height="41"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -514,16 +781,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6cl-Eu-wKx" firstAttribute="centerX" secondItem="MCM-gD-DBd" secondAttribute="centerX" id="19O-C1-gAU"/>
                             <constraint firstItem="uOm-hE-uik" firstAttribute="leading" secondItem="MCM-gD-DBd" secondAttribute="leading" constant="20" id="416-bA-wR2"/>
                             <constraint firstItem="oEo-TB-vsv" firstAttribute="leading" secondItem="5fR-T2-ykA" secondAttribute="leading" id="4D0-w3-2Mb"/>
                             <constraint firstItem="zed-Oi-9Mw" firstAttribute="top" secondItem="5fR-T2-ykA" secondAttribute="top" constant="40" id="5W4-rb-8YC"/>
                             <constraint firstAttribute="trailing" secondItem="uOm-hE-uik" secondAttribute="trailing" constant="20" id="Bp6-kc-2Pu"/>
                             <constraint firstItem="oEo-TB-vsv" firstAttribute="trailing" secondItem="5fR-T2-ykA" secondAttribute="trailing" id="Fv7-R1-rq2"/>
                             <constraint firstItem="zed-Oi-9Mw" firstAttribute="centerX" secondItem="MCM-gD-DBd" secondAttribute="centerX" id="QGe-bw-372"/>
+                            <constraint firstItem="5fR-T2-ykA" firstAttribute="trailing" secondItem="6cl-Eu-wKx" secondAttribute="trailing" constant="20" id="cfL-yn-xAj"/>
                             <constraint firstItem="uOm-hE-uik" firstAttribute="top" secondItem="6cl-Eu-wKx" secondAttribute="bottom" constant="30" id="giG-wp-eAd"/>
                             <constraint firstItem="oEo-TB-vsv" firstAttribute="bottom" secondItem="5fR-T2-ykA" secondAttribute="bottom" id="vT4-xw-H6k"/>
                             <constraint firstItem="6cl-Eu-wKx" firstAttribute="top" secondItem="zed-Oi-9Mw" secondAttribute="bottom" constant="30" id="ve3-h4-8rW"/>
+                            <constraint firstItem="6cl-Eu-wKx" firstAttribute="leading" secondItem="5fR-T2-ykA" secondAttribute="leading" constant="20" id="vs8-JZ-M2h"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5fR-T2-ykA"/>
                     </view>
@@ -548,8 +816,8 @@
                                     <constraint firstAttribute="height" constant="299" id="y9T-kt-YuP"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Third Joyful Mystery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxC-cu-11F">
-                                <rect key="frame" x="38.5" y="457" width="337" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Third Joyful Mystery" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxC-cu-11F">
+                                <rect key="frame" x="20" y="457" width="374" height="41"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -589,10 +857,11 @@
                             <constraint firstItem="Ky9-4K-C04" firstAttribute="top" secondItem="UxN-1n-GQV" secondAttribute="top" constant="40" id="SoL-rz-qRO"/>
                             <constraint firstItem="BFz-MS-zdH" firstAttribute="leading" secondItem="UxN-1n-GQV" secondAttribute="leading" id="WC8-wj-pAr"/>
                             <constraint firstItem="BFz-MS-zdH" firstAttribute="bottom" secondItem="UxN-1n-GQV" secondAttribute="bottom" id="YhX-UP-y7n"/>
+                            <constraint firstItem="UxN-1n-GQV" firstAttribute="trailing" secondItem="lxC-cu-11F" secondAttribute="trailing" constant="20" id="cXD-wn-Dhn"/>
                             <constraint firstItem="Ky9-4K-C04" firstAttribute="centerX" secondItem="C3I-lu-UL1" secondAttribute="centerX" id="gWV-et-1vf"/>
                             <constraint firstItem="5BP-97-0xN" firstAttribute="leading" secondItem="C3I-lu-UL1" secondAttribute="leading" constant="20" id="grc-Jg-f49"/>
-                            <constraint firstItem="lxC-cu-11F" firstAttribute="centerX" secondItem="C3I-lu-UL1" secondAttribute="centerX" id="h62-09-4Ts"/>
                             <constraint firstItem="BFz-MS-zdH" firstAttribute="trailing" secondItem="UxN-1n-GQV" secondAttribute="trailing" id="nEx-1O-g5G"/>
+                            <constraint firstItem="lxC-cu-11F" firstAttribute="leading" secondItem="UxN-1n-GQV" secondAttribute="leading" constant="20" id="ok6-4r-oFx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UxN-1n-GQV"/>
                     </view>
@@ -683,8 +952,8 @@
                                     <constraint firstAttribute="width" constant="229" id="PoK-2B-EvH"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Fourth Joyful Mystery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BM3-U9-rsl">
-                                <rect key="frame" x="28.5" y="457" width="357" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Fourth Joyful Mystery" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BM3-U9-rsl">
+                                <rect key="frame" x="20" y="457" width="374" height="41"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -719,9 +988,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="cGC-di-L4l" firstAttribute="leading" secondItem="Juh-Fw-4jb" secondAttribute="leading" id="0xD-S1-gqh"/>
-                            <constraint firstItem="BM3-U9-rsl" firstAttribute="centerX" secondItem="yx7-F9-x2X" secondAttribute="centerX" id="263-3o-huB"/>
                             <constraint firstItem="OzB-MS-w5T" firstAttribute="top" secondItem="BM3-U9-rsl" secondAttribute="bottom" constant="30" id="8BB-3J-wC4"/>
                             <constraint firstItem="B2d-l0-vlT" firstAttribute="centerX" secondItem="yx7-F9-x2X" secondAttribute="centerX" id="AQ4-Yj-tOR"/>
+                            <constraint firstItem="BM3-U9-rsl" firstAttribute="leading" secondItem="Juh-Fw-4jb" secondAttribute="leading" constant="20" id="E3Y-Tn-bZS"/>
+                            <constraint firstItem="Juh-Fw-4jb" firstAttribute="trailing" secondItem="BM3-U9-rsl" secondAttribute="trailing" constant="20" id="Rb0-UL-D2H"/>
                             <constraint firstItem="BM3-U9-rsl" firstAttribute="top" secondItem="B2d-l0-vlT" secondAttribute="bottom" constant="30" id="XUv-hP-uiS"/>
                             <constraint firstItem="Juh-Fw-4jb" firstAttribute="bottom" secondItem="cGC-di-L4l" secondAttribute="bottom" id="bQd-Yi-Lu0"/>
                             <constraint firstItem="B2d-l0-vlT" firstAttribute="top" secondItem="Juh-Fw-4jb" secondAttribute="top" constant="40" id="dMI-cs-YJY"/>
@@ -819,8 +1089,8 @@
                                     <constraint firstAttribute="height" constant="299" id="xR4-Yp-cr5"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Fifth Joyful Mystery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEN-Zs-btx">
-                                <rect key="frame" x="43" y="457" width="328.5" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Fifth Joyful Mystery" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEN-Zs-btx">
+                                <rect key="frame" x="20" y="457" width="374" height="41"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -852,13 +1122,14 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="EC8-Pf-wu5" firstAttribute="trailing" secondItem="rqh-d2-ogg" secondAttribute="trailing" id="24M-Pd-QqD"/>
                             <constraint firstItem="EC8-Pf-wu5" firstAttribute="leading" secondItem="rqh-d2-ogg" secondAttribute="leading" id="Ej1-te-cWu"/>
                             <constraint firstItem="3TQ-TX-X9y" firstAttribute="top" secondItem="bEN-Zs-btx" secondAttribute="bottom" constant="30" id="LCS-cw-SOB"/>
+                            <constraint firstItem="bEN-Zs-btx" firstAttribute="leading" secondItem="rqh-d2-ogg" secondAttribute="leading" constant="20" id="S3A-Qr-RSS"/>
+                            <constraint firstItem="rqh-d2-ogg" firstAttribute="trailing" secondItem="bEN-Zs-btx" secondAttribute="trailing" constant="20" id="SBg-yX-rEx"/>
                             <constraint firstItem="bEN-Zs-btx" firstAttribute="top" secondItem="g3m-Dh-sqs" secondAttribute="bottom" constant="30" id="WF9-5A-0Fl"/>
-                            <constraint firstItem="bEN-Zs-btx" firstAttribute="centerX" secondItem="2wD-Mz-xNf" secondAttribute="centerX" id="h36-fJ-6H1"/>
                             <constraint firstItem="3TQ-TX-X9y" firstAttribute="leading" secondItem="rqh-d2-ogg" secondAttribute="leading" constant="20" id="hKp-y3-6T5"/>
                             <constraint firstItem="rqh-d2-ogg" firstAttribute="trailing" secondItem="3TQ-TX-X9y" secondAttribute="trailing" constant="20" id="ha3-Xk-0lI"/>
                             <constraint firstItem="g3m-Dh-sqs" firstAttribute="centerX" secondItem="2wD-Mz-xNf" secondAttribute="centerX" id="jl7-jc-GkG"/>
@@ -917,7 +1188,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="226-SJ-bko" firstAttribute="centerX" secondItem="hDi-88-IvV" secondAttribute="centerX" id="2KP-hp-Kni"/>
                             <constraint firstItem="hng-xD-olB" firstAttribute="leading" secondItem="hTD-mA-Hse" secondAttribute="leading" constant="20" id="2hN-MJ-VI4"/>
@@ -940,12 +1211,443 @@
             </objects>
             <point key="canvasLocation" x="11481" y="-1114"/>
         </scene>
+        <!--The Sorrowful Mysteries-->
+        <scene sceneID="Zwb-VV-z9r">
+            <objects>
+                <viewController id="vc2-s3-jkD" customClass="ThirdSorrowfulMysteryViewController" customModule="Rosary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SKS-Pz-Ut6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mystery3" translatesAutoresizingMaskIntoConstraints="NO" id="ukY-7b-toh">
+                                <rect key="frame" x="92.5" y="128" width="229" height="299"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="299" id="3bP-Ep-XX0"/>
+                                    <constraint firstAttribute="width" constant="229" id="HQt-jj-Zos"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Third Sorrowful Mystery" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eW5-TN-Btk">
+                                <rect key="frame" x="20" y="457" width="374" height="82"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Crowning of Jesus with Thorns" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dto-Uw-Ajt">
+                                <rect key="frame" x="20" y="569" width="374" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="QUi-RD-qhQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s46-yu-728" customClass="BottomButton" customModule="Rosary" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="772" width="414" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Zsy-yJ-ygD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
+                                <state key="normal" title="Next Prayer">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IKk-cz-yKh"/>
+                                    <action selector="nextButton:" destination="apW-F4-lm9" eventType="touchUpInside" id="KVe-XO-7l0"/>
+                                    <action selector="nextButton:" destination="vc2-s3-jkD" eventType="touchUpInside" id="QLG-EL-6gZ"/>
+                                    <action selector="nextButton:" destination="k6N-iA-khb" eventType="touchUpInside" id="Tfy-T9-v34"/>
+                                    <action selector="nextPrayerButton:" destination="wQ0-As-uXi" eventType="touchUpInside" id="J8U-BS-G4P"/>
+                                    <action selector="nextPrayerButton:" destination="RGo-93-f9T" eventType="touchUpInside" id="y8T-6A-rCa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eW5-TN-Btk" firstAttribute="leading" secondItem="SKS-Pz-Ut6" secondAttribute="leading" constant="20" id="At7-Il-rjN"/>
+                            <constraint firstItem="t0L-fc-8DG" firstAttribute="trailing" secondItem="eW5-TN-Btk" secondAttribute="trailing" constant="20" id="IP7-Fg-Cq4"/>
+                            <constraint firstItem="dto-Uw-Ajt" firstAttribute="top" secondItem="eW5-TN-Btk" secondAttribute="bottom" constant="30" id="Iic-1Z-OGp"/>
+                            <constraint firstItem="ukY-7b-toh" firstAttribute="top" secondItem="t0L-fc-8DG" secondAttribute="top" constant="40" id="QkO-GU-nI9"/>
+                            <constraint firstItem="t0L-fc-8DG" firstAttribute="trailing" secondItem="s46-yu-728" secondAttribute="trailing" id="Sdf-Tx-ddg"/>
+                            <constraint firstItem="t0L-fc-8DG" firstAttribute="trailing" secondItem="dto-Uw-Ajt" secondAttribute="trailing" constant="20" id="Vgi-qm-kdA"/>
+                            <constraint firstItem="dto-Uw-Ajt" firstAttribute="leading" secondItem="SKS-Pz-Ut6" secondAttribute="leading" constant="20" id="Y4n-Qe-oSq"/>
+                            <constraint firstItem="t0L-fc-8DG" firstAttribute="bottom" secondItem="s46-yu-728" secondAttribute="bottom" id="evD-GU-S5R"/>
+                            <constraint firstItem="s46-yu-728" firstAttribute="leading" secondItem="SKS-Pz-Ut6" secondAttribute="leading" id="kDl-Bj-BCa"/>
+                            <constraint firstItem="eW5-TN-Btk" firstAttribute="top" secondItem="ukY-7b-toh" secondAttribute="bottom" constant="30" id="rMO-sQ-bN1"/>
+                            <constraint firstItem="ukY-7b-toh" firstAttribute="centerX" secondItem="SKS-Pz-Ut6" secondAttribute="centerX" id="wTU-8l-9O2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="t0L-fc-8DG"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="The Sorrowful Mysteries" id="mgU-63-EFI"/>
+                    <connections>
+                        <segue destination="tKp-lj-QXc" kind="show" identifier="ThirdSorrowfulToPrayers" id="C9d-UA-EyF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ixJ-vZ-tja" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7509" y="-352"/>
+        </scene>
+        <!--The Third Sorrowful Mystery-->
+        <scene sceneID="pAK-i2-lZn">
+            <objects>
+                <viewController id="tKp-lj-QXc" customClass="Sorrowful3ViewController" customModule="Rosary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ReL-DW-rlB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Third Decade" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Uu-aa-dYX">
+                                <rect key="frame" x="106.5" y="98" width="201.5" height="34.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ad-eo-HlT">
+                                <rect key="frame" x="20" y="298" width="374" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="oxo-hJ-M8Z"/>
+                                </constraints>
+                                <string key="text">For God's abundant mercy on the souls of those who have died from coronavirus. For strength and consolation for their grieving families. Our Lady, Help of Christians, intercede for us!</string>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSz-JP-dGJ" customClass="BottomButton" customModule="Rosary" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="772" width="414" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="90u-PI-Fqp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
+                                <state key="normal" title="Next Prayer">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OYl-aR-AHe"/>
+                                    <action selector="nextButton:" destination="0CL-q7-Spm" eventType="touchUpInside" id="Dct-jm-4Dr"/>
+                                    <action selector="nextButton:" destination="crr-h3-KSw" eventType="touchUpInside" id="mox-Pq-Wcv"/>
+                                    <action selector="nextButton:" destination="tKp-lj-QXc" eventType="touchUpInside" id="taF-z6-2eR"/>
+                                    <action selector="nextPrayerButton:" destination="wQ0-As-uXi" eventType="touchUpInside" id="2n7-nI-hzg"/>
+                                    <action selector="nextPrayerButton:" destination="RGo-93-f9T" eventType="touchUpInside" id="uKD-FB-eb0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="G1m-Sp-EKe" firstAttribute="trailing" secondItem="1ad-eo-HlT" secondAttribute="trailing" constant="20" id="3Kn-Re-jvK"/>
+                            <constraint firstAttribute="trailing" secondItem="dSz-JP-dGJ" secondAttribute="trailing" id="DEZ-eY-D5U"/>
+                            <constraint firstItem="8Uu-aa-dYX" firstAttribute="centerX" secondItem="ReL-DW-rlB" secondAttribute="centerX" id="Ifh-V9-Gpw"/>
+                            <constraint firstItem="8Uu-aa-dYX" firstAttribute="top" secondItem="G1m-Sp-EKe" secondAttribute="top" constant="10" id="OoD-nY-9YJ"/>
+                            <constraint firstItem="dSz-JP-dGJ" firstAttribute="leading" secondItem="G1m-Sp-EKe" secondAttribute="leading" id="OvO-F8-Kbl"/>
+                            <constraint firstItem="1ad-eo-HlT" firstAttribute="centerY" secondItem="ReL-DW-rlB" secondAttribute="centerY" id="WNo-r2-FFP"/>
+                            <constraint firstItem="1ad-eo-HlT" firstAttribute="leading" secondItem="G1m-Sp-EKe" secondAttribute="leading" constant="20" id="djz-gG-d3U"/>
+                            <constraint firstItem="G1m-Sp-EKe" firstAttribute="bottom" secondItem="dSz-JP-dGJ" secondAttribute="bottom" id="h4A-RX-xvC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="G1m-Sp-EKe"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="The Third Sorrowful Mystery" id="9tZ-lv-Yub"/>
+                    <connections>
+                        <outlet property="prayerLabel" destination="1ad-eo-HlT" id="PK4-l6-Qdg"/>
+                        <outlet property="prayerTitle" destination="8Uu-aa-dYX" id="ccq-V4-hUb"/>
+                        <segue destination="9Bg-mI-0B4" kind="show" identifier="Sorrowful3To4" id="a0e-If-YUJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1r2-2o-xpF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8390" y="-352"/>
+        </scene>
+        <!--The Sorrowful Mysteries-->
+        <scene sceneID="rCX-pL-apY">
+            <objects>
+                <viewController id="9Bg-mI-0B4" customClass="FourthSorrowfulMysteryViewController" customModule="Rosary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UzT-j9-IkW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mystery4" translatesAutoresizingMaskIntoConstraints="NO" id="yZJ-BD-gzi">
+                                <rect key="frame" x="92.5" y="128" width="229" height="299"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="229" id="Af0-o9-CWC"/>
+                                    <constraint firstAttribute="height" constant="299" id="Y7b-QR-1Y9"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Fourth Sorrowful Mystery" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sot-qS-Tyy">
+                                <rect key="frame" x="20" y="457" width="374" height="82"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Carrying of the Cross by Jesus to Mount Calvary" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNP-dh-qac">
+                                <rect key="frame" x="20" y="569" width="374" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Xab-bo-jCu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fum-dz-jf6" customClass="BottomButton" customModule="Rosary" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="772" width="414" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="T8e-Jc-o16"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
+                                <state key="normal" title="Next Prayer">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1gh-GM-mef"/>
+                                    <action selector="nextButton:" destination="9Bg-mI-0B4" eventType="touchUpInside" id="k9M-5t-DSG"/>
+                                    <action selector="nextButton:" destination="vc2-s3-jkD" eventType="touchUpInside" id="kQn-x0-3Sa"/>
+                                    <action selector="nextButton:" destination="apW-F4-lm9" eventType="touchUpInside" id="r6v-LR-s8b"/>
+                                    <action selector="nextPrayerButton:" destination="RGo-93-f9T" eventType="touchUpInside" id="BLV-RZ-5on"/>
+                                    <action selector="nextPrayerButton:" destination="wQ0-As-uXi" eventType="touchUpInside" id="vAl-ea-DaU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eNP-dh-qac" firstAttribute="leading" secondItem="UzT-j9-IkW" secondAttribute="leading" constant="20" id="1qM-EP-f9I"/>
+                            <constraint firstItem="TTu-I0-swK" firstAttribute="trailing" secondItem="Sot-qS-Tyy" secondAttribute="trailing" constant="20" id="4US-1l-ZZ4"/>
+                            <constraint firstItem="yZJ-BD-gzi" firstAttribute="centerX" secondItem="UzT-j9-IkW" secondAttribute="centerX" id="6lk-Qe-p8m"/>
+                            <constraint firstItem="Fum-dz-jf6" firstAttribute="leading" secondItem="TTu-I0-swK" secondAttribute="leading" id="Hr9-4G-JVZ"/>
+                            <constraint firstItem="yZJ-BD-gzi" firstAttribute="top" secondItem="TTu-I0-swK" secondAttribute="top" constant="40" id="NXR-4V-JL4"/>
+                            <constraint firstItem="Sot-qS-Tyy" firstAttribute="leading" secondItem="TTu-I0-swK" secondAttribute="leading" constant="20" id="RJ2-0f-85s"/>
+                            <constraint firstAttribute="trailing" secondItem="Fum-dz-jf6" secondAttribute="trailing" id="Wvf-IH-ZQl"/>
+                            <constraint firstItem="TTu-I0-swK" firstAttribute="trailing" secondItem="eNP-dh-qac" secondAttribute="trailing" constant="20" id="ez0-gx-4Gt"/>
+                            <constraint firstItem="eNP-dh-qac" firstAttribute="top" secondItem="Sot-qS-Tyy" secondAttribute="bottom" constant="30" id="qFS-VB-hgs"/>
+                            <constraint firstItem="Sot-qS-Tyy" firstAttribute="top" secondItem="yZJ-BD-gzi" secondAttribute="bottom" constant="30" id="wDy-fY-v6p"/>
+                            <constraint firstItem="TTu-I0-swK" firstAttribute="bottom" secondItem="Fum-dz-jf6" secondAttribute="bottom" id="xPl-kP-Nmu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TTu-I0-swK"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="The Sorrowful Mysteries" id="0wl-Y9-h4X"/>
+                    <connections>
+                        <segue destination="6QN-KL-uqj" kind="show" identifier="FourthSorrowfulToPrayers" id="0sQ-nQ-mST"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xpR-f6-DwI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9246" y="-348"/>
+        </scene>
+        <!--The Fourth Sorrowful Mystery-->
+        <scene sceneID="Mfo-gk-jVF">
+            <objects>
+                <viewController id="6QN-KL-uqj" customClass="Sorrowful4ViewController" customModule="Rosary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eDd-dO-Osf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Fourth Decade" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0g3-k4-nap">
+                                <rect key="frame" x="97.5" y="98" width="219" height="35"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7K-tw-ddx">
+                                <rect key="frame" x="20" y="298" width="374" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Yff-eJ-Jkc"/>
+                                </constraints>
+                                <string key="text">For protection on those who are most vulnerable to coronavirus: the elderly, those with compromised immune systems, those who have been traveling abroad, those who are in quarantine. Our Lady, Help of Christians, intercede for us!</string>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kmk-Tj-Dl4" customClass="BottomButton" customModule="Rosary" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="772" width="414" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="wsa-i7-Y4p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
+                                <state key="normal" title="Next Prayer">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EkZ-H7-nkY"/>
+                                    <action selector="nextButton:" destination="0CL-q7-Spm" eventType="touchUpInside" id="5l0-wb-oBi"/>
+                                    <action selector="nextButton:" destination="6QN-KL-uqj" eventType="touchUpInside" id="FfA-ud-Vt8"/>
+                                    <action selector="nextButton:" destination="tKp-lj-QXc" eventType="touchUpInside" id="SFA-RC-cxK"/>
+                                    <action selector="nextButton:" destination="crr-h3-KSw" eventType="touchUpInside" id="kFj-GQ-9LX"/>
+                                    <action selector="nextPrayerButton:" destination="wQ0-As-uXi" eventType="touchUpInside" id="3q0-Cj-pcA"/>
+                                    <action selector="nextPrayerButton:" destination="RGo-93-f9T" eventType="touchUpInside" id="uyb-KI-mC9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0g3-k4-nap" firstAttribute="top" secondItem="AJp-Ck-LBW" secondAttribute="top" constant="10" id="6SJ-GB-BB5"/>
+                            <constraint firstItem="AJp-Ck-LBW" firstAttribute="bottom" secondItem="Kmk-Tj-Dl4" secondAttribute="bottom" id="9dE-xg-19c"/>
+                            <constraint firstItem="S7K-tw-ddx" firstAttribute="leading" secondItem="AJp-Ck-LBW" secondAttribute="leading" constant="20" id="Vo5-Xx-lZ8"/>
+                            <constraint firstItem="S7K-tw-ddx" firstAttribute="centerY" secondItem="eDd-dO-Osf" secondAttribute="centerY" id="ivD-Y1-7Bn"/>
+                            <constraint firstItem="Kmk-Tj-Dl4" firstAttribute="leading" secondItem="eDd-dO-Osf" secondAttribute="leading" id="nJa-WP-Gj1"/>
+                            <constraint firstItem="0g3-k4-nap" firstAttribute="centerX" secondItem="eDd-dO-Osf" secondAttribute="centerX" id="nl5-52-uZ4"/>
+                            <constraint firstAttribute="trailing" secondItem="S7K-tw-ddx" secondAttribute="trailing" constant="20" id="rLg-Y8-myE"/>
+                            <constraint firstItem="AJp-Ck-LBW" firstAttribute="trailing" secondItem="Kmk-Tj-Dl4" secondAttribute="trailing" id="vUd-LT-bxw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AJp-Ck-LBW"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="The Fourth Sorrowful Mystery" id="PM5-Rz-Vaj"/>
+                    <connections>
+                        <outlet property="prayerLabel" destination="S7K-tw-ddx" id="0Dj-Qz-xYr"/>
+                        <outlet property="prayerTitle" destination="0g3-k4-nap" id="WyW-RR-3WR"/>
+                        <segue destination="N1S-FL-OIS" kind="show" identifier="Sorrowful4To5" id="F1A-pj-bfC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2mw-jx-tWm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10125" y="-348"/>
+        </scene>
+        <!--The Sorrowful Myteries-->
+        <scene sceneID="p26-eT-dJA">
+            <objects>
+                <viewController id="N1S-FL-OIS" customClass="FifthSorrowfulMysteryViewController" customModule="Rosary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SMp-4G-Ilr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ju-m8-3BV" customClass="BottomButton" customModule="Rosary" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="772" width="414" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="4y5-dv-GRL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
+                                <state key="normal" title="Next Prayer">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AlR-ur-pvj"/>
+                                    <action selector="nextButton:" destination="apW-F4-lm9" eventType="touchUpInside" id="FII-YB-M0Z"/>
+                                    <action selector="nextButton:" destination="N1S-FL-OIS" eventType="touchUpInside" id="JXt-je-hgV"/>
+                                    <action selector="nextButton:" destination="9Bg-mI-0B4" eventType="touchUpInside" id="d8c-Kb-gPd"/>
+                                    <action selector="nextButton:" destination="vc2-s3-jkD" eventType="touchUpInside" id="zKX-uz-jFj"/>
+                                    <action selector="nextPrayerButton:" destination="RGo-93-f9T" eventType="touchUpInside" id="51F-2q-bAb"/>
+                                    <action selector="nextPrayerButton:" destination="wQ0-As-uXi" eventType="touchUpInside" id="qzK-SP-cVa"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mystery5" translatesAutoresizingMaskIntoConstraints="NO" id="XQe-gG-spW">
+                                <rect key="frame" x="92.5" y="128" width="229" height="299"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="299" id="6Ib-s1-oKb"/>
+                                    <constraint firstAttribute="width" constant="229" id="GCN-1d-HqO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Fifth Sorrowful Mystery" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAH-3z-G29">
+                                <rect key="frame" x="20" y="457" width="374" height="82"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Crucifixtion of Jesus on Mount Calvary" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9MM-eQ-obT">
+                                <rect key="frame" x="20" y="569" width="374" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="jfD-5v-jpq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="e5q-5c-dl2" firstAttribute="trailing" secondItem="9MM-eQ-obT" secondAttribute="trailing" constant="20" id="0nm-Hc-qxM"/>
+                            <constraint firstItem="e5q-5c-dl2" firstAttribute="bottom" secondItem="5Ju-m8-3BV" secondAttribute="bottom" id="2l2-a3-S7Y"/>
+                            <constraint firstItem="5Ju-m8-3BV" firstAttribute="leading" secondItem="SMp-4G-Ilr" secondAttribute="leading" id="3fk-ml-0ny"/>
+                            <constraint firstItem="9MM-eQ-obT" firstAttribute="leading" secondItem="e5q-5c-dl2" secondAttribute="leading" constant="20" id="Cou-wu-cWr"/>
+                            <constraint firstItem="e5q-5c-dl2" firstAttribute="trailing" secondItem="5Ju-m8-3BV" secondAttribute="trailing" id="JMd-PZ-tfA"/>
+                            <constraint firstItem="e5q-5c-dl2" firstAttribute="trailing" secondItem="LAH-3z-G29" secondAttribute="trailing" constant="20" id="KBs-qL-zjb"/>
+                            <constraint firstItem="LAH-3z-G29" firstAttribute="top" secondItem="XQe-gG-spW" secondAttribute="bottom" constant="30" id="UZd-Ar-a0w"/>
+                            <constraint firstItem="XQe-gG-spW" firstAttribute="centerX" secondItem="SMp-4G-Ilr" secondAttribute="centerX" id="iiZ-eY-o7d"/>
+                            <constraint firstItem="9MM-eQ-obT" firstAttribute="top" secondItem="LAH-3z-G29" secondAttribute="bottom" constant="30" id="qYg-NN-QMT"/>
+                            <constraint firstItem="LAH-3z-G29" firstAttribute="leading" secondItem="SMp-4G-Ilr" secondAttribute="leading" constant="20" id="v9d-Ab-iE6"/>
+                            <constraint firstItem="XQe-gG-spW" firstAttribute="top" secondItem="e5q-5c-dl2" secondAttribute="top" constant="40" id="wXV-t9-1S6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e5q-5c-dl2"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="The Sorrowful Myteries" id="IWa-T0-3Zp"/>
+                    <connections>
+                        <segue destination="Rgg-sG-YUn" kind="show" identifier="FifthSorrowFulMysteryToPrayers" id="rFm-j4-oZ5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SXq-bY-PtH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10935" y="-352"/>
+        </scene>
+        <!--Sorrowful5 View Controller-->
+        <scene sceneID="KPL-5f-1N1">
+            <objects>
+                <viewController id="Rgg-sG-YUn" customClass="Sorrowful5ViewController" customModule="Rosary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D1w-HC-2FC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Fifth Decade" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mu4-N8-m4w">
+                                <rect key="frame" x="109.5" y="128" width="195" height="35"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fto-0D-4Pn">
+                                <rect key="frame" x="20" y="298" width="374" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="gDT-CR-GEG"/>
+                                </constraints>
+                                <string key="text">For an expedient halt to the spread of the virus. For churches and schools to be reopened, and for people to be able to return to their normal daily activities with a deepend fiath and love for God. Our Lady, Help of Christians, intercede for us!</string>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izR-9c-aaO" customClass="BottomButton" customModule="Rosary" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="772" width="414" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="2IQ-jL-m2x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
+                                <state key="normal" title="Next Prayer">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="arc-dM-iWu"/>
+                                    <action selector="nextButton:" destination="6QN-KL-uqj" eventType="touchUpInside" id="5tK-xa-q9P"/>
+                                    <action selector="nextButton:" destination="tKp-lj-QXc" eventType="touchUpInside" id="8Py-w2-iKE"/>
+                                    <action selector="nextButton:" destination="0CL-q7-Spm" eventType="touchUpInside" id="8lF-tt-9mf"/>
+                                    <action selector="nextButton:" destination="crr-h3-KSw" eventType="touchUpInside" id="jmO-5r-lVm"/>
+                                    <action selector="nextButton:" destination="Rgg-sG-YUn" eventType="touchUpInside" id="uy7-TC-8Yt"/>
+                                    <action selector="nextPrayerButton:" destination="RGo-93-f9T" eventType="touchUpInside" id="11m-KJ-dLp"/>
+                                    <action selector="nextPrayerButton:" destination="wQ0-As-uXi" eventType="touchUpInside" id="twM-mv-4Qf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="PM0-am-onE" firstAttribute="trailing" secondItem="izR-9c-aaO" secondAttribute="trailing" id="8xw-ht-v2S"/>
+                            <constraint firstItem="PM0-am-onE" firstAttribute="bottom" secondItem="izR-9c-aaO" secondAttribute="bottom" id="HV3-IN-OQn"/>
+                            <constraint firstItem="fto-0D-4Pn" firstAttribute="leading" secondItem="PM0-am-onE" secondAttribute="leading" constant="20" id="JCM-Ff-N8X"/>
+                            <constraint firstItem="mu4-N8-m4w" firstAttribute="centerX" secondItem="D1w-HC-2FC" secondAttribute="centerX" id="fAq-2F-jGP"/>
+                            <constraint firstItem="mu4-N8-m4w" firstAttribute="top" secondItem="PM0-am-onE" secondAttribute="top" constant="40" id="fcI-Qb-x5b"/>
+                            <constraint firstItem="PM0-am-onE" firstAttribute="trailing" secondItem="fto-0D-4Pn" secondAttribute="trailing" constant="20" id="iV1-Db-WYo"/>
+                            <constraint firstItem="fto-0D-4Pn" firstAttribute="centerY" secondItem="D1w-HC-2FC" secondAttribute="centerY" id="kyq-H4-o4i"/>
+                            <constraint firstItem="izR-9c-aaO" firstAttribute="leading" secondItem="D1w-HC-2FC" secondAttribute="leading" id="wNv-WV-d01"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PM0-am-onE"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rq7-Ka-lx0"/>
+                    <connections>
+                        <outlet property="prayerLabel" destination="fto-0D-4Pn" id="tK5-fh-bHA"/>
+                        <outlet property="prayerTitle" destination="mu4-N8-m4w" id="cgJ-7n-8Ui"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rh6-a7-cX2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11764" y="-348"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Mystery1" width="59" height="83"/>
+        <image name="Mystery3" width="58" height="83"/>
         <image name="fifthJoyfulMystery" width="335" height="411.5"/>
         <image name="firstJoyfulMystery" width="78.5" height="111.5"/>
         <image name="fourthJoyfulMystery" width="95" height="136"/>
         <image name="hiclipart.com" width="400" height="550.5"/>
+        <image name="mystery2" width="58.5" height="83"/>
+        <image name="mystery4" width="58" height="83"/>
+        <image name="mystery5" width="58" height="83"/>
         <image name="secondJoyfulMystery" width="94" height="137"/>
         <image name="thirdJoyfulMystery" width="94" height="136.5"/>
     </resources>
