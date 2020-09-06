@@ -20,6 +20,9 @@ class ChooseDayViewController: UIViewController {
         performSegue(withIdentifier: "MondayAndTuesdayToJoful", sender: nil)
     }
     
+    @IBAction func tuesdayButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "TuesdayToSorroful", sender: nil)
+    }
     
 
 }
